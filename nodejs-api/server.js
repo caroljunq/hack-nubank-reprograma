@@ -61,7 +61,7 @@ app.post('/post-facil', (req,res) =>{
 
 // Lista ofertas
 app.get("/ofertas", (req, res) => {
-  facilCtrl.all()
+  offerCtrl.all()
     .then((registers) =>{
       res.send(registers);
     })
