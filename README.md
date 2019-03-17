@@ -44,6 +44,7 @@ Validar a transação de venda do microcrédito da facilitadora para a empreende
 * Criar 2 pastas: searched_images e indexed_images no bucket
 
 ### 2 Configuração DynamoDB
+* Criar duas tabelas para receber os dados dos eventos do lambda/S3
 
 ### 3 Configuração Lambda Function
 * Criar 1º função em python  --> função de indexar imagem
@@ -51,7 +52,7 @@ Validar a transação de venda do microcrédito da facilitadora para a empreende
 * Criar 2ª função em python --> função de reconhecimento
 
 ### 4 Gerar Eventos
-???
+* Configurar eventos do S3 e triggers no Lambda para reconhecer/indexar imagens.
 
 ### Links importantes
 * https://github.com/awslabs/serverless-photo-recognition
