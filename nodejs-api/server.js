@@ -81,6 +81,8 @@ app.post('/post-oferta', (req,res) =>{
     })
 })
 
+app.post
+
 app.listen(3000,function(){
   console.log("Ouvindo a porta 3000!");
 })

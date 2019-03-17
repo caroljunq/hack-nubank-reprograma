@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { Http, Response } from '@angular/http';
+import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
 @Component({
   selector: 'app-list',
@@ -6,34 +8,42 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['list.page.scss']
 })
 export class ListPage implements OnInit {
-  private selectedItem: any;
-  private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
-  ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+
+  teste: any;
+  constructor(private camera: Camera) {
+
   }
 
   ngOnInit() {
+
   }
-  // add back when alpha.4 is out
-  // navigate(item) {
-  //   this.router.navigate(['/list', JSON.stringify(item)]);
-  // }
+
+  options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.FILE_URI,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
+  }
+
+  // takePicture(cep: string): Observable<Frete> {
+  //       return this._http.get(this._Url)
+  //           .map((response: Response) => <Frete>response.json())
+  //           .do(data => console.log('All: ' + JSON.stringify(data)))
+  //           .catch(this.handleError);
+  //   }
+
+
+    takePicture(){
+      this.camera.getPicture(this.options).then((imageData) => {
+       // imageData is either a base64 encoded string or a file URI
+       // If it's base64 (DATA_URL):
+       let base64Image = 'data:image/jpeg;base64,' + imageData;
+       console.log("deuu bom");
+      }, (err) => {
+       // Handle error
+       this.teste = err;
+      });
+    }
+
+
 }
