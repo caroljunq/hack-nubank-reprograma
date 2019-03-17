@@ -8,6 +8,14 @@ Hackathona Reprograma Nubank
 # NodeJs API
 * Conexão com **MongoDB na AWS Plan Sandbox do Mongolab** (free) e nodejs rodando na **AWS EC2**;
 * Dados ficticios e modelos da aplicação.
+* Rodando na **Digital Ocean** http://138.197.170.34:3018/ 
+* Rotas:
+   * /empreendedoras - GET
+   * /post-empreend - POST (name,birth_date,address)
+   * /facilitadoras - GET 
+   * /post-facil - POST (name,birth_date,address)
+   * /ofertas - GET
+   * /post-oferta - POST (name, description, value_contract, rate, periods)
 
 ## Rodar
 * git clone
