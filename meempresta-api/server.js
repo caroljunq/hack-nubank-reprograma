@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function(req,res){
-  res.send("Deu certo!")
+  res.send("Deu certoo!")
 })
 
 
