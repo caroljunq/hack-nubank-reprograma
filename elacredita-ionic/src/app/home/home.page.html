@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="match-div">
+    <ion-title>DEU MATCH!</ion-title>
+    <ion-icon slot="start" name="heart-empty"></ion-icon>
+    <div>Vocês combinam um com o outro:</div>
+  </div>
+  <ion-grid>
+    <ion-row class="ofertas">
+      <ion-card>
+          <ion-card-header>
+            <img class="image-offer" src="assets/bradesco.png"/>
+            <ion-card-title>Oferta 123</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <span><b>Valor máximo:</b> 3000,00</span>
+            <span><b>Taxa:</b>: 4,00%</span>
+            <span><b>Prazo máximo:</b> 12 meses</span>
+          </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-header>
+            <img class="image-offer" src="assets/caixa.png"/>
+            <ion-card-title>Oferta 231</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <span><b>Valor máximo:</b> 15.000,00</span>
+            <span><b>Taxa:</b> 3,30%</span>
+            <span><b>Prazo máximo:</b> 24 meses</span>
+          </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-header>
+            <img class="image-offer" src="assets/itau-logo-1.png"/>
+            <ion-card-title>Oferta 555</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <span><b>Valor máximo:</b> 14.500,00</span>
+            <span><b>Taxa:</b> 3,79%</span>
+            <span><b>Prazo máximo:</b> 12 meses</span>
+          </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-header>
+            <img class="image-offer" src="assets/movera.png"/>
+            <ion-card-title>Oferta 987</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <span><b>Valor máximo:</b> 5000,00</span>
+            <span><b>Taxa:</b> 3,50%</span>
+            <span><b>Prazo máximo:</b> 12 meses</span>
+          </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+  <ion-row class="prossegue">
+    <ion-button color="danger" shape="round" style="margin: 0 auto;" size="large" routerLink="/list" routerDirection="forward">Prosseguir</ion-button>
+  </ion-row>
+</ion-content>

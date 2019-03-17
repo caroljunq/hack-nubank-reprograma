@@ -1,0 +1,59 @@
+.image-offer{
+  width: 3.8rem;
+}
+
+
+ion-card{
+  max-height: 250px;
+  width: 90%;
+}
+ion-card-header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  & > * {
+    padding-right: 15px;
+  }
+}
+
+ion-card-content{
+  & > *{
+    display: block;
+  }
+}
+
+.ofertas{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.match-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+
+  & > ion-title{
+    color: #727272;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  & > div {
+    color: #727272;
+    font-size: 0.8rem;
+  }
+
+  & > ion-icon{
+    color: red;
+    font-size: 1.8rem;
+  }
+
+  .prossegue{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+}
