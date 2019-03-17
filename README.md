@@ -2,9 +2,20 @@
 
 Hackathona Reprograma Nubank
 
+# Protótipo Navegável
+* Link INVISION:
+
 # NodeJs API
 * Conexão com **MongoDB na AWS Plan Sandbox do Mongolab** (free) e nodejs rodando na **AWS EC2**;
 * Dados ficticios e modelos da aplicação.
+* Rodando na **Digital Ocean** http://138.197.170.34:3018/ 
+* Rotas:
+   * /empreendedoras - GET
+   * /post-empreend - POST (name,birth_date,address)
+   * /facilitadoras - GET 
+   * /post-facil - POST (name,birth_date,address)
+   * /ofertas - GET
+   * /post-oferta - POST (name, description, value_contract, rate, periods)
 
 ## Rodar
 * git clone
@@ -33,6 +44,7 @@ Validar a transação de venda do microcrédito da facilitadora para a empreende
 * Criar 2 pastas: searched_images e indexed_images no bucket
 
 ### 2 Configuração DynamoDB
+* Criar duas tabelas para receber os dados dos eventos do lambda/S3
 
 ### 3 Configuração Lambda Function
 * Criar 1º função em python  --> função de indexar imagem
@@ -40,10 +52,10 @@ Validar a transação de venda do microcrédito da facilitadora para a empreende
 * Criar 2ª função em python --> função de reconhecimento
 
 ### 4 Gerar Eventos
-???
+* Configurar eventos do S3 e triggers no Lambda para reconhecer/indexar imagens.
 
-## Links importantes
+### Links importantes
 * https://github.com/awslabs/serverless-photo-recognition
 
-### ERRO AWS -  Rekognition não funcionou
-* Não conseguimos implementar o face recognition por conta de "FALTA DE PERMISSÂO do REKOGNITION AWS no TEAM Role fornecido pelo evento" - 00:13 dia 17/03/2019.
+### ERRO AWS -  Rekognition não funcionou (plataforma não permitia)
+* Não conseguimos implementar o face recognition por conta da "FALTA DE PERMISSÂO do REKOGNITION AWS no TEAM Role fornecido pelo evento" - 00:13 dia 17/03/2019.
