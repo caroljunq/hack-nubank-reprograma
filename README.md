@@ -2,6 +2,9 @@
 
 Hackathona Reprograma Nubank
 
+# Protótipo Navegável
+* Link INVISION:
+
 # NodeJs API
 * Conexão com **MongoDB na AWS Plan Sandbox do Mongolab** (free) e nodejs rodando na **AWS EC2**;
 * Dados ficticios e modelos da aplicação.
@@ -42,8 +45,8 @@ Validar a transação de venda do microcrédito da facilitadora para a empreende
 ### 4 Gerar Eventos
 ???
 
-## Links importantes
+### Links importantes
 * https://github.com/awslabs/serverless-photo-recognition
 
-### ERRO AWS -  Rekognition não funcionou
-* Não conseguimos implementar o face recognition por conta de "FALTA DE PERMISSÂO do REKOGNITION AWS no TEAM Role fornecido pelo evento" - 00:13 dia 17/03/2019.
+### ERRO AWS -  Rekognition não funcionou (plataforma não permitia)
+* Não conseguimos implementar o face recognition por conta da "FALTA DE PERMISSÂO do REKOGNITION AWS no TEAM Role fornecido pelo evento" - 00:13 dia 17/03/2019.
