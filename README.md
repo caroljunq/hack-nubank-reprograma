@@ -2,6 +2,17 @@
 
 Hackathona Reprograma Nubank
 
+# NodeJs API
+* Conexão com **MongoDB na AWS Plan Sandbox do Mongolab** (free) e nodejs rodando na **AWS EC2**;
+* Dados ficticios e modelos da aplicação.
+
+## Rodar
+* git clone
+* cd path_pasta
+* npm install
+* node server.js
+* visualizar rotas no server.js
+
 # Validação/ verificação de identidade
 
 ## Serveless Face recognition
